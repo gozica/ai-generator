@@ -1,13 +1,63 @@
-body{
-    color: white;
-    background-color: black;
+body {
+  background-color: rgb(220, 228, 233);
+  margin: 120px auto;
+  max-width: 600px;
+  font-family: monospace;
+}
+header {
+  margin-bottom: 30px;
+}
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: rgb(152, 149, 149);
 }
 
-h1{
-    text-align: center;
+form{
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    background-color: white;
+    box-shadow: 6px 20px 60px rgba(65, 50, 100, 0.08);
+}
+.quote {
+  font-size: 14px;
+  background-color: white;
+  padding: 20px;
+  line-height: 1.5;
+  border-left: 3px solid grey;
+box-shadow: 6px 20px 60px rgba(65, 50, 100, 0.08);
+
+
+}
+.prompt{
+    padding: 16px;
+    border: 1px solid grey;
+    width: 80%;
+    font-size: 16px;
+    border-radius: 15px;
+    line-height: 15px;
+    color: black;
 }
 
-footer{
-    text-align: center;
-    
+footer {
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+  
+}
+
+.button{
+margin-left: 10px;
+background-color: rgb(152, 149, 149);
+color: white;
+border: none;
+border-radius: 50px;
+padding: 24px;
+width: 125px;
+font-size: 16px;
+
+
 }
