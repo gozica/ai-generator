@@ -13,9 +13,11 @@ function generateQuote(event) {
   const apiKey = "64429b6f596o3223b0tda144cff94530";
   const prompt = `Generate a stoic quote ${instructionsInput.value}`;
   const context =
-    "You are a philosophy expert and love stoicism. Your mission is to generate a stoic quote in basic HTML. Make sure to follow user instructions.";
+    "You are a philosophy expert and love stoicism. Your mission is to generate a stoic quote in basic HTML. Make sure to follow user instructions. Please only include the quote to display to the user.";
   const apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+const quoteElement = document.querySelector("#stoic-quote")
+quoteElement.classList.remove("hidden");
 
   axios.get(apiUrl).then(displayQuote);
 }
